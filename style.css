@@ -1,0 +1,102 @@
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "rejouice headline";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* If you're using multiple fonts in your website then do this */
+@font-face{
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face{
+    font-family: rej;
+    src: url(./Rejouice-Headline.ttf);
+}
+
+/* Our PAGE 1 Content - parents ko position relative dena is good practise */
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: aliceblue;
+}
+#cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: rgb(255, 95, 56);
+    border-radius: 50%;
+    position: fixed;
+    /* aage dekhne ke liye z-index */
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cursor h5{
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+#page1 video{
+    height: 100%;
+    /* Below command is for the image tags or smething.  */
+    object-fit: cover;  
+    width: 100%; 
+    /* for sending the video back of the page1 content we're  giving */
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+  
+    /* for showing everything ahead of video we're giving */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    /* Rejoice ko bottom mei laane ki ninja technique  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5vw;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+}
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+    font-family: nb;
+
+}
+nav h4{
+    font-size: 1.4vw;
+
+}
+#page1-content h1{
+    font-family: rej;
+    font-size: 20vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+#page1-content h1 span{
+    font-family: rej;
+}
+
+/* Page1 Content ends here */
+/* Page2 Content starts here */
+#page2{
+    height: 100vh;
+    width: 100%;
+    background: black;
+}
